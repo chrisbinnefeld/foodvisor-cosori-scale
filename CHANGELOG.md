@@ -1,3 +1,10 @@
+# 1.0.0 (2026-10-05)
+
+
+### Features
+
+* add Cosori CNS-R101S kitchen scale support to Foodvisor ([86563ad](https://github.com/chrisbinnefeld/foodvisor-cosori-scale/commit/86563adbdb3595561618ac6a7ddfb430696e64d9))
+
 # Changelog
 
 ## [Unreleased]
