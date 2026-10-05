@@ -1,4 +1,4 @@
-# foodvisor-revanced
+# foodvisor-cosori-scale
 
 ReVanced-Patch-Repo für **Foodvisor** (`io.foodvisor.foodvisor`) mit
 experimentellem Support für die **Cosori CNS-R101S** Edelstahl-Küchenwaage.

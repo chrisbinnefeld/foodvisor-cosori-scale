@@ -2,12 +2,12 @@ group = "io.foodvisor"
 
 patches {
     about {
-        name = "Foodvisor ReVanced Patches"
-        description = "ReVanced patches for Foodvisor (io.foodvisor.foodvisor), including experimental Cosori CNS-R101S kitchen scale support."
-        source = "git@github.com:cbinnefeld/foodvisor-revanced.git"
-        author = "cbinnefeld"
-        contact = "cbinnefeld@localhost"
-        website = "https://github.com/cbinnefeld/foodvisor-revanced"
+        name = "Foodvisor Cosori Scale Patches"
+        description = "ReVanced patches for Foodvisor (io.foodvisor.foodvisor) adding support for the Cosori CNS-R101S kitchen scale."
+        source = "https://github.com/chrisbinnefeld/foodvisor-cosori-scale"
+        author = "chrisbinnefeld"
+        contact = "chrisbinnefeld@users.noreply.github.com"
+        website = "https://github.com/chrisbinnefeld/foodvisor-cosori-scale"
         license = "GNU General Public License v3.0"
     }
 }

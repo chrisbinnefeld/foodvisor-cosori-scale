@@ -1,4 +1,4 @@
-rootProject.name = "foodvisor-revanced"
+rootProject.name = "foodvisor-cosori-scale"
 
 pluginManagement {
     repositories {

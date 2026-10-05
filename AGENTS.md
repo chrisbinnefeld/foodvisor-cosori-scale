@@ -1,4 +1,4 @@
-# AGENTS.md – foodvisor-revanced
+# AGENTS.md – foodvisor-cosori-scale
 
 ## Projekt
 
