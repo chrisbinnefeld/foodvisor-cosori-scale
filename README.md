@@ -35,6 +35,7 @@ Der Scale-Patch hängt automatisch vom Permissions-Patch ab.
   - [`FEASIBILITY.md`](docs/FEASIBILITY.md) – Machbarkeit, Optionen, Aufwand
   - [`ANALYSIS.md`](docs/ANALYSIS.md) – Foodvisor-APK-Analyseplan
   - [`PROTOCOL.md`](docs/PROTOCOL.md) – Capture-Playbook für die CNS-R101S
+  - [`RELEASE.md`](docs/RELEASE.md) – GPG-Secrets & Auto-Release (GitHub Actions)
 
 ## Bekannte Einschränkungen
 
