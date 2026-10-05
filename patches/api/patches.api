@@ -1,0 +1,8 @@
+public final class io/foodvisor/patches/scale/CosoriScalePatchKt {
+	public static final fun getCosoriScalePatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class io/foodvisor/patches/scale/CosoriScalePermissionsPatchKt {
+	public static final fun getCosoriScalePermissionsPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
