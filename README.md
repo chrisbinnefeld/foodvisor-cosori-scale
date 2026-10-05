@@ -52,13 +52,38 @@ Der Scale-Patch hängt automatisch vom Permissions-Patch ab.
 
 ## Bauen
 
-Voraussetzungen: JDK 17+ und Android SDK. Siehe [`AGENTS.md`](AGENTS.md).
+Voraussetzungen: **JDK 21** und Android SDK; für das ReVanced-Gradle-Plugin ein
+GitHub-Packages-Token mit `read:packages`. Details in [`AGENTS.md`](AGENTS.md).
 
 ```bash
 ./gradlew build
 ```
 
-Ausgabe: `patches/build/libs/patches-*.rvp`.
+Ausgabe: `patches/build/libs/patches-1.0.4.rvp`.
+
+## Patch anwenden (revanced-cli)
+
+Gilt für Foodvisor **7.5.6** (App-Bundle mit Splits). ReVanced-Patcher v21
+verwenden (passend zum Bundle), z. B. `revanced-cli` **v5.0.2**.
+
+```bash
+# 1) Splits zu einem APK mergen (base + split_config.*.apk)
+java -jar APKEditor.jar m -i foodvisor-splits/ -o foodvisor-merged.apk
+
+# 2) Patchen (Bundle ist unsigniert -> -b)
+java -jar revanced-cli.jar patch \
+  -p patches/build/libs/patches-1.0.4.rvp \
+  -o foodvisor-patched.apk \
+  foodvisor-merged.apk
+
+# 3) Installieren (Original vorher deinstallieren; Google-Login geht nicht,
+#    stattdessen E-Mail/Passwort nutzen)
+adb uninstall io.foodvisor.foodvisor
+adb install foodvisor-patched.apk
+```
+
+Hinweis: Das gepatchte APK wird mit einem festen ReVanced-Schlüssel signiert –
+Updates per `adb install -r` behalten die Verbindung/Daten bei.
 
 ## Lizenz
 

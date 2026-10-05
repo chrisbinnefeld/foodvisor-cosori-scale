@@ -58,7 +58,7 @@ val cosoriScalePatch = bytecodePatch(
     name = "Cosori CNS-R101S scale support",
     description = "Experimental bridge that connects a Cosori CNS-R101S (VeSync) BLE kitchen scale, feeds its weight into Foodvisor's quantity picker and pushes nutrition values to the scale display.",
 ) {
-    compatibleWith("io.foodvisor.foodvisor")
+    compatibleWith("io.foodvisor.foodvisor"("7.5.6"))
 
     dependsOn(cosoriScalePermissionsPatch)
 

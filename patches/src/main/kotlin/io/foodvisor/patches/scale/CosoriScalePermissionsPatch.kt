@@ -24,7 +24,7 @@ val cosoriScalePermissionsPatch = resourcePatch(
     name = "Cosori CNS-R101S scale permissions",
     description = "Adds BLUETOOTH_SCAN/CONNECT (and legacy BLE permissions) to the manifest.",
 ) {
-    compatibleWith("io.foodvisor.foodvisor")
+    compatibleWith("io.foodvisor.foodvisor"("7.5.6"))
 
     execute {
         val manifest = document("AndroidManifest.xml")
